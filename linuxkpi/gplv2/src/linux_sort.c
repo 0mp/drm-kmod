@@ -27,6 +27,7 @@
  * SUCH DAMAGE.
  */
 
+#if 0	/* To replace with __FreeBSD_version */
 #include <sys/cdefs.h>
 __FBSDID("$FreeBSD$");
 
@@ -180,3 +181,5 @@ sort(void *base, size_t num, size_t size,
 	__qsort(base, num, size, cmp, swap);
 
 }
+
+#endif
