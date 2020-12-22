@@ -166,6 +166,7 @@ unregister_oom_notifier(struct notifier_block *nb)
 
 }
 
+#if 0
 int
 register_shrinker(struct shrinker *s)
 {
@@ -298,3 +299,4 @@ linuxkpi_deregister_eventhandlers(void *arg __unused)
 
 SYSINIT(linuxkpi_events, SI_SUB_DRIVERS, SI_ORDER_ANY, linuxkpi_register_eventhandlers, NULL);
 SYSUNINIT(linuxkpi_events, SI_SUB_DRIVERS, SI_ORDER_ANY, linuxkpi_deregister_eventhandlers, NULL);
+#endif
